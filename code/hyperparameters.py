@@ -4,9 +4,11 @@
 # Brown CSCI 1430 assignment
 # Created by Aaron Gokaslan
 
+#creating the datadir
+datadir = 'C:\\Users\\Aditya\\Documents\\Fall 2017\\CSE 573 CVIP\\Homework\\Projects\\projTFCNNs\\code/../data/'
 # Data parameters
 # Resize image for task 1. Task 2 _must_ have an image size of 224, so we hard code this for you in Scene15 constructor
-img_size = 64
+img_size = 224
 category_num = 15
 num_train_per_category = 100
 num_test_per_category = 100

@@ -20,13 +20,14 @@ from tensorpack.dataflow.base import RNGDataFlow
 
 from vgg_model import VGGModel
 from your_model import YourModel
-import hyperparameters as hp
 
+import hyperparameters as hp
 """
 TASK 1: To train from scratch (on CPU) and validate:
     python run.py --task 1 --gpu -1
 
-TASK 2: To fine tune the VGG-16 model (will error until you make changes):
+TASK 2: To fine tune the 
+-16 model (will error until you make changes):
     python run.py --task 2 --gpu -1
 
 
@@ -165,6 +166,7 @@ def get_data(datadir, task, train_or_test):
 """
 Program argument parsing, data setup, and training
 """
+#training on Task  1 gives error on Image size
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -202,8 +204,10 @@ if __name__ == '__main__':
     dataset_test = get_data(args.data, args.task, 'test')
 
     # TensorPack: Training configuration
+    print(args.task)
     config = TrainConfig(
-        model=YourModel() if args.task == '1' else VGGModel(),
+        #model=YourModel() if args.task == '1' else VGGModel(),
+        model = VGGModel(),
         dataflow=dataset_train,
         callbacks=[
             # Callbacks are performed at the end of every epoch.
@@ -220,7 +224,8 @@ if __name__ == '__main__':
         ],
         max_epoch=hp.num_epochs,
         nr_tower=max(get_nr_gpu(), 1),
-        session_init=None if args.task == '1' else get_model_loader(args.load)
+        #session_init=None if args.task == '1' else get_model_loader(args.load)
+        session_init = None
     )
     # TensorPack: Training with simple one at a time feed into batches
     SimpleTrainer(config).train()

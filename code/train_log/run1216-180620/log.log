@@ -1,0 +1,91 @@
+[32m[1216 18:06:20 @logger.py:74][0m Argv: C:/Users/Aditya/Documents/Fall 2017/CSE 573 CVIP/Homework/Projects/projTFCNNs/code/run.py --task 2 --gpu -1
+[32m[1216 18:06:36 @inference_runner.py:79][0m InferenceRunner will eval 30 iterations
+[32m[1216 18:06:36 @base.py:322][0m [5m[31mWRN[0m You're calling new trainers with old trainer API!
+[32m[1216 18:06:36 @base.py:323][0m [5m[31mWRN[0m Now it returns the old trainer for you, please switch to use new trainers soon!
+[32m[1216 18:06:36 @base.py:324][0m [5m[31mWRN[0m See https://github.com/ppwwyyxx/tensorpack/issues/458 for more information.
+[32m[1216 18:06:36 @simple.py:38][0m [5m[31mWRN[0m FeedInput is slow (and this is the default of SimpleTrainer). Consider QueueInput or other InputSource instead.
+[32m[1216 18:06:36 @registry.py:121][0m conv1_1 input: [None, 224, 224, 3]
+[32m[1216 18:06:36 @registry.py:129][0m conv1_1 output: [None, 224, 224, 64]
+[32m[1216 18:06:36 @registry.py:121][0m conv1_2 input: [None, 224, 224, 64]
+[32m[1216 18:06:36 @registry.py:129][0m conv1_2 output: [None, 224, 224, 64]
+[32m[1216 18:06:36 @registry.py:121][0m pool1 input: [None, 224, 224, 64]
+[32m[1216 18:06:36 @registry.py:129][0m pool1 output: [None, 112, 112, 64]
+[32m[1216 18:06:36 @registry.py:121][0m conv2_1 input: [None, 112, 112, 64]
+[32m[1216 18:06:36 @registry.py:129][0m conv2_1 output: [None, 112, 112, 128]
+[32m[1216 18:06:36 @registry.py:121][0m conv2_2 input: [None, 112, 112, 128]
+[32m[1216 18:06:36 @registry.py:129][0m conv2_2 output: [None, 112, 112, 128]
+[32m[1216 18:06:36 @registry.py:121][0m pool2 input: [None, 112, 112, 128]
+[32m[1216 18:06:36 @registry.py:129][0m pool2 output: [None, 56, 56, 128]
+[32m[1216 18:06:36 @registry.py:121][0m conv3_1 input: [None, 56, 56, 128]
+[32m[1216 18:06:36 @registry.py:129][0m conv3_1 output: [None, 56, 56, 256]
+[32m[1216 18:06:36 @registry.py:121][0m conv3_2 input: [None, 56, 56, 256]
+[32m[1216 18:06:37 @registry.py:129][0m conv3_2 output: [None, 56, 56, 256]
+[32m[1216 18:06:37 @registry.py:121][0m conv3_3 input: [None, 56, 56, 256]
+[32m[1216 18:06:37 @registry.py:129][0m conv3_3 output: [None, 56, 56, 256]
+[32m[1216 18:06:37 @registry.py:121][0m pool3 input: [None, 56, 56, 256]
+[32m[1216 18:06:37 @registry.py:129][0m pool3 output: [None, 28, 28, 256]
+[32m[1216 18:06:37 @registry.py:121][0m conv4_1 input: [None, 28, 28, 256]
+[32m[1216 18:06:37 @registry.py:129][0m conv4_1 output: [None, 28, 28, 512]
+[32m[1216 18:06:37 @registry.py:121][0m conv4_2 input: [None, 28, 28, 512]
+[32m[1216 18:06:37 @registry.py:129][0m conv4_2 output: [None, 28, 28, 512]
+[32m[1216 18:06:37 @registry.py:121][0m conv4_3 input: [None, 28, 28, 512]
+[32m[1216 18:06:37 @registry.py:129][0m conv4_3 output: [None, 28, 28, 512]
+[32m[1216 18:06:37 @registry.py:121][0m pool4 input: [None, 28, 28, 512]
+[32m[1216 18:06:37 @registry.py:129][0m pool4 output: [None, 14, 14, 512]
+[32m[1216 18:06:37 @registry.py:121][0m conv5_1 input: [None, 14, 14, 512]
+[32m[1216 18:06:37 @registry.py:129][0m conv5_1 output: [None, 14, 14, 512]
+[32m[1216 18:06:37 @registry.py:121][0m conv5_2 input: [None, 14, 14, 512]
+[32m[1216 18:06:37 @registry.py:129][0m conv5_2 output: [None, 14, 14, 512]
+[32m[1216 18:06:37 @registry.py:121][0m conv5_3 input: [None, 14, 14, 512]
+[32m[1216 18:06:37 @registry.py:129][0m conv5_3 output: [None, 14, 14, 512]
+[32m[1216 18:06:37 @registry.py:121][0m pool5 input: [None, 14, 14, 512]
+[32m[1216 18:06:37 @registry.py:129][0m pool5 output: [None, 7, 7, 512]
+[32m[1216 18:06:37 @registry.py:121][0m fc6 input: [None, 7, 7, 512]
+[32m[1216 18:06:37 @registry.py:129][0m fc6 output: [None, 4096]
+[32m[1216 18:06:37 @registry.py:121][0m fc7 input: [None, 4096]
+[32m[1216 18:06:37 @registry.py:129][0m fc7 output: [None, 4096]
+[32m[1216 18:06:37 @registry.py:121][0m fc8 input: [None, 4096]
+[32m[1216 18:06:37 @registry.py:129][0m fc8 output: [None, 1000]
+[32m[1216 18:06:38 @model_utils.py:47][0m [36mModel Parameters: 
+[0mname         shape                   dim
+-----------  ----------------  ---------
+conv1_1/W:0  [3, 3, 3, 64]          1728
+conv1_1/b:0  [64]                     64
+conv1_2/W:0  [3, 3, 64, 64]        36864
+conv1_2/b:0  [64]                     64
+conv2_1/W:0  [3, 3, 64, 128]       73728
+conv2_1/b:0  [128]                   128
+conv2_2/W:0  [3, 3, 128, 128]     147456
+conv2_2/b:0  [128]                   128
+conv3_1/W:0  [3, 3, 128, 256]     294912
+conv3_1/b:0  [256]                   256
+conv3_2/W:0  [3, 3, 256, 256]     589824
+conv3_2/b:0  [256]                   256
+conv3_3/W:0  [3, 3, 256, 256]     589824
+conv3_3/b:0  [256]                   256
+conv4_1/W:0  [3, 3, 256, 512]    1179648
+conv4_1/b:0  [512]                   512
+conv4_2/W:0  [3, 3, 512, 512]    2359296
+conv4_2/b:0  [512]                   512
+conv4_3/W:0  [3, 3, 512, 512]    2359296
+conv4_3/b:0  [512]                   512
+conv5_1/W:0  [3, 3, 512, 512]    2359296
+conv5_1/b:0  [512]                   512
+conv5_2/W:0  [3, 3, 512, 512]    2359296
+conv5_2/b:0  [512]                   512
+conv5_3/W:0  [3, 3, 512, 512]    2359296
+conv5_3/b:0  [512]                   512
+fc6/W:0      [25088, 4096]     102760448
+fc6/b:0      [4096]                 4096
+fc7/W:0      [4096, 4096]       16777216
+fc7/b:0      [4096]                 4096
+fc8/W:0      [4096, 1000]        4096000
+fc8/b:0      [1000]                 1000[36m
+Total #vars=32, #param=138357544 (527.79 MB assuming all float32)[0m
+[32m[1216 18:06:38 @base.py:143][0m Setup callbacks graph ...
+[32m[1216 18:06:39 @predict.py:42][0m Building predictor tower 'InferenceTower' on device /gpu:0 ...
+[32m[1216 18:06:39 @summary.py:34][0m Maintain moving average summary of 2 tensors.
+[32m[1216 18:06:42 @base.py:148][0m Creating the session ...
+[32m[1216 18:06:56 @base.py:152][0m Initializing the session ...
+[32m[1216 18:06:56 @base.py:159][0m Graph Finalized.
+[32m[1216 18:06:58 @base.py:193][0m Start Epoch 1 ...
